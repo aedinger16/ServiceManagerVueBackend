@@ -102,6 +102,8 @@ public class EmployeeServiceDataService {
         serviceResource.setAddress(locationIQDataService.getAddress(service.getLongitude(), service.getLatitude()));
         serviceResource.setDate(service.getDate());
         serviceResource.setName(service.getName());
+        serviceResource.setLatitude(service.getLatitude());
+        serviceResource.setLongitude(service.getLongitude());
         serviceResource.setEmployee(employeeServiceManager.getEmployee(service.getEmployeeId()));
 
         return serviceResource;
@@ -133,6 +135,8 @@ public class EmployeeServiceDataService {
         employeeResource.setId(employee.getId());
         employeeResource.setName(employee.getName());
         employeeResource.setAddress(locationIQDataService.getAddress(employee.getLongitude(), employee.getLatitude()));
+        employeeResource.setLatitude(employee.getLatitude());
+        employeeResource.setLongitude(employee.getLongitude());
 
         return employeeResource;
     }
