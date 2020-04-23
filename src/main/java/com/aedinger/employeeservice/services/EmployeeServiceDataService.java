@@ -167,7 +167,7 @@ public class EmployeeServiceDataService {
 
     private boolean checkDate(String date) {
         try{
-            LocalDateTime ldt = LocalDateTime.parse(date, DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm"));
+            LocalDateTime ldt = LocalDateTime.parse(date, DateTimeFormatter.ofPattern("EEE, dd MMM yyyy HH:mm:ss zzz"));
         }catch (Exception e){
             return false;
         }

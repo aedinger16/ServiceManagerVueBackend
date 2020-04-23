@@ -54,7 +54,6 @@ public class EmployeeServiceRestController {
         return serviceResource;
     }
 
-
     @RequestMapping(value = "/services/{serviceId}", method = RequestMethod.DELETE)
     public ServiceResource deleteService(@PathVariable int serviceId){
         return empServiceDataService.deleteService(serviceId);
