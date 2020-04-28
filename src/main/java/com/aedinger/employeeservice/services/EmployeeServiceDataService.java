@@ -154,9 +154,9 @@ public class EmployeeServiceDataService {
         if(isNullOrEmpty(serviceDto.getDate())){
             throw new ServiceBadRequestException("The date must be set");
         }
-        if(!checkDate(serviceDto.getDate())){
-            throw new ServiceNotFoundException("The date must be set correct");
-        }
+//        if(!checkDate(serviceDto.getDate())){
+//            throw new ServiceNotFoundException("The date must be set correct");
+//        }
         if(isNullOrEmpty(serviceDto.getAddress())){
             throw new ServiceBadRequestException("The address must be set");
         }
